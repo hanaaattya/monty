@@ -2,10 +2,10 @@
 
 void free_stack(StackNode* stack)
 {
-    StackNode* temp;
+    StackNode* tmp;
     while (stack != NULL) {
-        temp = stack;
+        tmp = stack;
         stack = stack->next;
-        free(temp);
+        free(tmp);
     }
 }

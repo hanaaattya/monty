@@ -2,9 +2,9 @@
 
 void pall(StackNode** stack)
 {
-    StackNode* current = *stack;
-    while (current != NULL) {
-        printf("%d\n", current->data);
-        current = current->next;
+    StackNode* Current = *stack;
+    while (Current != NULL) {
+        printf("%d\n", Current->data);
+        Current = Current->next;
     }
 }

@@ -2,16 +2,16 @@
 
 int pop(StackNode** stack)
 {
-	int value;
-	StackNode* temp;
+	int Value;
+	StackNode* tmp;
     if (*stack == NULL)
     {
         fprintf(stderr, "Error: Stack underflow\n");
         exit(EXIT_FAILURE);
     }
-    value = (*stack)->data;
-    temp = *stack;
+    Value = (*stack)->data;
+    tmp = *stack;
     *stack = (*stack)->next;
-    free(temp);
-    return (value);
+    free(tmp);
+    return (Value);
 }

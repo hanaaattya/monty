@@ -14,6 +14,9 @@ void push(StackNode** stack, int value);
 int pop(StackNode** stack);
 void pall(StackNode** stack);
 void free_stack(StackNode* stack);
-
+void pint(StackNode **stack, unsigned int Line_Num);
+void swap(StackNode **stack, unsigned int Line_Num);
+void add(StackNode **stack, unsigned int Line_Num);
+void nop(StackNode **stack, unsigned int Line_Num);
 #endif
 
